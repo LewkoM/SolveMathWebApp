@@ -1,0 +1,16 @@
+<ion-header>
+<ion-toolbar color="secondary">
+  <ion-title>Login</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="block round-box">
+    <ion-input class="myInput" placeholder="Username" [(ngModel)]="username" (ngModelChange)="name = $event.toLocaleUpperCase()"></ion-input>
+    <ion-input class="myInput" placeholder="Team name" [(ngModel)]="team_name" (ngModelChange)="team_id = $event.toLocaleUpperCase()"></ion-input>
+    <ion-button class="myInputButton" (click)="loginToHome(username, team_name)">Login</ion-button>
+  </div>
+
+
+</ion-content>

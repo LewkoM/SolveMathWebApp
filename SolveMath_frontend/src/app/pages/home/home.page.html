@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Witaj {{ username }}, Drużyna: {{ teamName }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="block round-box">
+    <ion-button class="myInputButton" [routerLink]='["single-player"]'>Jednoosobowy</ion-button>
+    <ion-button class="myInputButton" >Wyzwanie</ion-button>
+    <ion-button class="myInputButton" >Oczekujące wyzwania</ion-button>
+    <ion-button class="myInputButton" [routerLink]='["stats"]'>Statystyki</ion-button>
+  </div>
+
+</ion-content>
